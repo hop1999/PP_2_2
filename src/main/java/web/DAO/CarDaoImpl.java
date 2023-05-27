@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 @Repository
 public class CarDaoImpl implements CarDao {
+
     private List<Car> carList = new ArrayList<>() {
         {
             add (new Car("5000$", "car1", "Yellow"));
@@ -15,6 +16,7 @@ public class CarDaoImpl implements CarDao {
             add (new Car("8-800-555-35-35$", "car5", "Black"));
         }
     };
+
     @Override
     public List<Car> getCarList(int count) {
         return carList.stream().limit(count).toList();
