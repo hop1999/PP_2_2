@@ -4,9 +4,9 @@ import org.springframework.stereotype.Repository;
 import web.model.Car;
 import java.util.ArrayList;
 import java.util.List;
+
 @Repository
 public class CarDaoImpl implements CarDao {
-
     private List<Car> carList = new ArrayList<>() {
         {
             add (new Car("5000$", "car1", "Yellow"));
